@@ -1,0 +1,7 @@
+# Netlify Redirects for SellPilot AI (Guarantees zero 404 for all users)
+
+# 1. Forward all API calls to Netlify Serverless Function
+/api/*  /.netlify/functions/api/:splat  200
+
+# 2. SPA client-side routing fallback
+/*      /index.html                     200

@@ -1,0 +1,20 @@
+# Netlify configuration for SellPilot AI
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+
+# Proxy /api requests to Netlify Serverless Function with 200 OK
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+# Single-Page Application (SPA) fallback to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

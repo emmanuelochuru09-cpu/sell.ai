@@ -1,0 +1,6 @@
+{
+  "name": "SellPilot AI",
+  "description": "Turn your business into an AI-powered sales machine. Generate high-converting AI ads, build customer-ready websites, and manage sales leads with localized currency support and Netlify deployment diagnostics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
